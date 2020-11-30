@@ -27,7 +27,7 @@ public class App {
             return new ModelAndView(model,"index.hbs");
         },new HandlebarsTemplateEngine());
 
-        //ranger
+
         get("/create/ranger",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             return new ModelAndView(model,"ranger-form.hbs");
@@ -71,7 +71,7 @@ public class App {
 
 
 
-        //location
+
         get("/create/location",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             return new ModelAndView(model,"location-form.hbs");
@@ -116,7 +116,7 @@ public class App {
         },new HandlebarsTemplateEngine());
 
 
-        //animal
+
         get("/create/animal",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             return new ModelAndView(model,"animal-form.hbs");
@@ -169,7 +169,7 @@ public class App {
         },new HandlebarsTemplateEngine());
 
 
-        //sighting
+
         get("/create/sighting",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             model.put("rangers",Rangers.all());
