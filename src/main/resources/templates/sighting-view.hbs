@@ -1,21 +1,21 @@
 {{#partial "content"}}
     <div class="views sightings">
         <h1>Sightings</h1>
-        <hr>
 
-        <div class="row">
+
+        <div class="card m-2" style="background-color:rgb(109, 63, 3);">
 
             {{#if sightings}}
                 <div class="col-md-3">
                     <h3>Time</h3>
-                    <hr>
                     {{#each sightings as |s|}}
                         <h3>{{s.time}}</h3>
                     {{/each}}
                 </div>
+            <hr>
                 <div class="col-md-3">
                     <h3>Animal</h3>
-                    <hr>
+
                     {{#each animals as |a|}}
                         <h3>{{a}}</h3>
                     {{/each}}
