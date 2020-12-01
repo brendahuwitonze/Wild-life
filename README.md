@@ -25,6 +25,15 @@ CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 * Go to DB.class in main/java folder and make necessary changes
 * Go to DatabaseRule in test/java folder and make necessary changes
 
+### TECHNOLOGIES USED
+* JAVA
+* Heroku
+* CSS
+* HBS
+
+
+
+
 
 
 
