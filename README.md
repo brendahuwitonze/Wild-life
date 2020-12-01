@@ -4,6 +4,8 @@ Wildlife Tracker is an app that allows one to record sightings of various animal
 
 ### Author
 [UWITONZE BRENDAH](https://github.com/brendahuwitonze)
+### IMAGE OF THE PROJECT
+![IMAGE]()
 
 ## setup of the database
 In PSQL:
