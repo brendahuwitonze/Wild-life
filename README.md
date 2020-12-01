@@ -21,5 +21,10 @@ CREATE TABLE rangers_sightings (id serial PRIMARY KEY,ranger_id INT,sighting_id 
 * CREATE TABLE sightings (id serial PRIMARY KEY,animal_id INT,ranger_id INT,location_id INT,time TIMESTAMP);
 CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 
+#### To run the database locally
+* Go to DB.class in main/java folder and make necessary changes
+* Go to DatabaseRule in test/java folder and make necessary changes
+
+
 
 
