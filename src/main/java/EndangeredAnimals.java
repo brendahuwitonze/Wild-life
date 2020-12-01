@@ -1,7 +1,5 @@
 import org.sql2o.Connection;
 
-import java.util.List;
-
 public class EndangeredAnimals extends Animals implements DatabaseManagement {
 
     private String health;

@@ -111,25 +111,7 @@ public class Animals implements DatabaseManagement{
 
     }
 
-    public void delete(){
-        try (Connection con=DB.sql2o.open()){
-            String sql = "DELETE FROM animals WHERE id=:id";
-            con.createQuery(sql)
-                    .addParameter("id",this.id)
-                    .executeUpdate();
 
-        }
-    }
-    public static void deleteAll(){
-        try (Connection con=DB.sql2o.open()){
-            String sql = "DELETE FROM animals";
-            con.createQuery(sql)
-                    .executeUpdate();
-        }  catch (Sql2oException ex){
-            System.out.println(ex);
-        }
-
-    }
     public static List<Animals> all(){
         try (Connection con=DB.sql2o.open()) {
             String sql ="SELECT * FROM animals";
