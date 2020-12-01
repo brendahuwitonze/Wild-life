@@ -50,7 +50,7 @@ public class RangersTest {
         Rangers otherRanger=ranger;
         ranger.save();
         try {
-            ranger.update(ranger.getId(),"Ruth Mwangi","0714735954");
+            ranger.update(ranger.getId(),"brendah","0714735954");
             Rangers foundRanger=Rangers.find(ranger.getId());
             assertNotEquals(foundRanger,otherRanger);
             assertEquals(foundRanger.getId(),otherRanger.getId());
@@ -63,7 +63,7 @@ public class RangersTest {
     @Test
     public void entriesAreDeleted() {
         Rangers ranger= setNewRanger();
-        Rangers otherRanger=new Rangers("Sylvia","2","0726108898");
+        Rangers otherRanger=new Rangers("bress","2","07786108898");
         ranger.save();
         otherRanger.save();
         ranger.delete();
@@ -75,7 +75,7 @@ public class RangersTest {
     public void ReturningslightsForRanger() {
         Rangers ranger=setNewRanger();
         try {
-            Locations location=new Locations("Zone A");
+            Locations location=new Locations("Akagera");
             ranger.save();
             location.save();
             Sightings sighting=new Sightings(location.getId(),ranger.getId(),1);
@@ -92,7 +92,7 @@ public class RangersTest {
 
     //helper class
     private Rangers setNewRanger() {
-        return new Rangers("Ruth","1","07123456");
+        return new Rangers("bress","1","0787123456");
     }
 
 }
