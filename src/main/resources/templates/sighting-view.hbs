@@ -1,5 +1,6 @@
 {{#partial "content"}}
     <div class="views sightings">
+
         <h1>Sightings</h1>
 
 
@@ -8,16 +9,16 @@
             {{#if sightings}}
                 <div class="col-md-3">
                     <h3>Time</h3>
-                    {{#each sightings as |s|}}
-                        <h3>{{s.time}}</h3>
+                    {{#each sightings}}
+                        <h3>{{sightings.time}}</h3>
                     {{/each}}
                 </div>
             <hr>
                 <div class="col-md-3">
                     <h3>Animal</h3>
 
-                    {{#each animals as |a|}}
-                        <h3>{{a}}</h3>
+                    {{#each animals}}
+                        <h3>{{animals}}</h3>
                     {{/each}}
 
                 </div>
